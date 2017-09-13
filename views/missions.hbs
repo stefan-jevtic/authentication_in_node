@@ -1,0 +1,12 @@
+{{# if session}}
+    <h1>Welcome back {{session.username}}</h1>
+    <a href="/missions/logout">Logout</a>
+    <h2>Select the mission:</h2>
+    <ul>
+        {{#each items}}
+            <li><a href="/missions/{{this.Name}}">{{this.Name}}</a></li>
+        {{/each}}
+    </ul>
+{{else}}
+    <h1>pulenzi</h1>
+{{/if}}
