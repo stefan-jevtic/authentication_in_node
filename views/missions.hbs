@@ -5,6 +5,7 @@
     <ul>
         {{#each items}}
             <li><a href="/missions/{{this.Name}}">{{this.Name}}</a></li>
+            <p>{{this.Description}}</p>
         {{/each}}
     </ul>
 {{else}}
